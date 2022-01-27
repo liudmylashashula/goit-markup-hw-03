@@ -188,6 +188,7 @@ a {
 
 .direction-filter-button:focus,
 .direction-filter-button:hover {
+  cursor: pointer;
   background: var(--blue);
   color: var(--white);
 }
