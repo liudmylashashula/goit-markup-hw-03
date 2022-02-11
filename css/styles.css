@@ -245,6 +245,7 @@ ul {
 
 .task-list {
     display: flex;
+    justify-content: center;
 }
 
 .task-section {
