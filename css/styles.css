@@ -90,12 +90,6 @@ ul {
     margin-left: 50px;
 }
 
-.nav-item {
-    display: flex;
-    margin-left: auto;
-    align-items: center;
-}
-
 .logo {
     font-family: 'Raleway';
     font-size: 26px;
@@ -205,7 +199,6 @@ ul {
 
 .feature-list {
     display: flex;
-    /* list-style: none; */
 }
 
 .feature-h {
@@ -218,9 +211,10 @@ ul {
     margin-bottom: 10px;
 }
 
-.feature-item {
+.feature-item:not(:last-child) {
     margin-right: 30px;
 }
+
 
 .feature-desc {
     font-size: 14px;
@@ -239,13 +233,12 @@ ul {
     margin-bottom: 50px;
 }
 
-.task-list-item + .task-list-item {
+.task-list-item+.task-list-item {
     margin-left: 30px;
 }
 
 .task-list {
     display: flex;
-    justify-content: center;
 }
 
 .task-section {
@@ -310,14 +303,14 @@ ul {
     text-align: center;
 }
 
-.direction-button-item+.direction-button-item {
+.direction-button-item:not(:last-child) {
     margin-right: 8px;
 }
 
-.direction-item+.direction-item {
-    margin-bottom: 4px;
+.direction-item {
+    margin-right: -30px;
+    margin-bottom: -30px;
 }
-
 
 .direction-filter-button:focus,
 .direction-filter-button:hover {
@@ -333,6 +326,8 @@ ul {
 }
 
 .direction-list {
+    margin-right: -30px;
+    margin-bottom: -30px;
     display: flex;
     flex-wrap: wrap;
     margin-top: 50px;
